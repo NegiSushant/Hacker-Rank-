@@ -1,0 +1,43 @@
+
+#https://www.hackerrank.com/challenges/py-if-else/problem
+
+#Task--->>
+#        Given an integer, , perform the following conditional actions:
+#             1) If is odd, print Weird
+#             2) If is even and in the inclusive range of to , print Not Weird
+#             3) If is even and in the inclusive range of to , print Weird
+#             4) If is even and greater than , print Not Weird
+
+#Input Format--->> A single line containing a positive integer, n.
+#
+#Constraints--->> (1<= n <= 100)
+#Output Format-->>
+#                 Print Weird if the number is weird. Otherwise, print Not Weird .
+#Sample Input 0--->> 3
+#               
+#Sample Output 0--->>> Weird
+#Weird
+
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(raw_input().strip())
+    for n in range(2, 5):
+        if n%2==0:
+            print("Not Weird")
+        else:
+            print("Weird")
+    
+    for n in range(6, 20):
+        if n%2==0:
+            print("Not Weird")
+        else:
+            print("Weird")
+
